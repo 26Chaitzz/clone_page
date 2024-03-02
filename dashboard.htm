@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full bg-gray-50">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>wCard</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="csrf-token"
+      content="z7j0GnKHsBlVeaaf7b4JRZyEcL3Db9pHtWcHFKT2"
+    />
+    <link
+      href="https://wcardcdn.b-cdn.net/dash/css/dashboard.css?id=2f532be2f116e3d4861c2c99def2f71e"
+      rel="stylesheet"
+    />
+
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-TLSXTGF");
+    </script>
+    <script>
+      if (typeof dataLayer !== undefined) {
+        dataLayer.push({
+          user_id: 30791,
+        });
+      }
+    </script>
+    <link
+      rel="shortcut icon"
+      href="https://wcard.io/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <style>
+      :root {
+        --brand-color: #eaa110;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen">
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-TLSXTGF"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <div id="app" class="h-full"></div>
+
+    <script>
+      var auth = {
+        check: 1,
+        user: {
+          id: 30791,
+          name: "Chaitanya Mule",
+          email: "chaitanya26503@gmail.com",
+          mobile_number: null,
+          email_verified_at: "2024-03-01T15:33:08.000000Z",
+          last_login: "2024-03-01T15:33:08.000000Z",
+          two_factor_secret: null,
+          two_factor_recovery_codes: null,
+          current_team_id: null,
+          profile_photo_path: null,
+          country: "India",
+          city: "Thane",
+          status: "enabled",
+          created_at: "2024-02-14T13:56:14.000000Z",
+          updated_at: "2024-03-01T15:33:08.000000Z",
+          stripe_id: null,
+          pm_type: null,
+          pm_last_four: null,
+          trial_ends_at: null,
+          vendor_id: null,
+          referral_code: null,
+          primary_card_id: 30835,
+          primary_card_url: "https:\/\/chaita30791.wcard.me",
+          cards: 1,
+          suspended: false,
+          permissions: [
+            "profile.cards.view",
+            "profile.nfccards.view",
+            "profile.contacts.view",
+            "profile.leads.view",
+            "profile.analytics.view",
+            "account.settings.view",
+            "account.subscription.view",
+            "account.support.view",
+            "account.rateus.view",
+            "dashboard.chat.view",
+            "profile.cards.create",
+            "profile.virtualbackground.view",
+            "profile.emailsignature.view",
+          ],
+          login_url:
+            "https:\/\/wcard.io\/auth\/login-with-qr?_t=8e709cee93710b15c5052446733d126b",
+          myvendor: null,
+        },
+        isPremium: 0,
+        isVendor: 0,
+      };
+      var csrf = "z7j0GnKHsBlVeaaf7b4JRZyEcL3Db9pHtWcHFKT2";
+      var logoutUrl = "/logout";
+      var wa_number = "+919654440805";
+      var cdn_url = "https://wcardcdn.b-cdn.net/";
+    //   var logo_url = "https://wcard.io/images/wcard.png";
+      var success = null;
+      var error = null;
+
+      var plans = {
+        currency: "inr",
+        premium: {
+          monthly: {
+            price_id: "price_1MneDvSDf9aCHdxcYGBHDToE",
+            total: 199,
+            ft: "\u20b9199",
+            price: 199,
+            fp: "\u20b9199",
+            subtitle: "Cancel Anytime",
+            title: "\u20b9199 \/ month",
+            reccuring: "month",
+            discount: null,
+            coupon: null,
+            product_id: "6",
+            total_yearly: "\u20b92,388",
+          },
+          annually: {
+            price_id: "price_1LW0YfSDf9aCHdxcMaObfrhq",
+            total: 999,
+            ft: "\u20b9999",
+            price: 999,
+            fp: "\u20b9999",
+            subtitle: "",
+            title: "\u20b9999.00",
+            reccuring: "year",
+            discount: "\u20b9500 OFF",
+            coupon: null,
+            product_id: "1",
+          },
+          name: "Premium",
+          features: [
+            "Personalized Link <small>(yourname.wcard.io)<\/small>",
+            "Custom Domain with SSL <small>(yourdomain.com)<\/small>",
+            "Hide wCard Branding",
+            "Unlimited Pages",
+            "5000+ CRM Integrations",
+            "Multiple Themes",
+            "Unlimited Social Profile & Website Links",
+            "Unlimited Leads",
+            "Payment Links <small>(Paypal, UPI, etc)<\/small>",
+            "AI Magic Text",
+            "Premium Fonts",
+            "Dark\/Light Theme",
+            "Embed Musics & Videos <small>(Spotify, Soundcloud, Youtube etc)<\/small>",
+            "Upload Unlimited Photos",
+            "Connect YouTube Channel",
+            "Facebook Chat Integration",
+            "Calendly Integration",
+            "Google Analytics Integration",
+            "Add Custom Javascript Code",
+            "Change Copyright Text",
+            "SEO Optimizations",
+            "All Future Updates",
+          ],
+        },
+        teams: {
+          monthly: {
+            price_id: "price_1NvN0VSDf9aCHdxcJZzjw2jc",
+            total: 2,
+            ft: "\u20b9149",
+            price: 2,
+            fp: "$2",
+            subtitle: null,
+            title: null,
+            reccuring: "month",
+            discount: null,
+            coupon: null,
+            product_id: null,
+            total_yearly: "\u20b91,788",
+          },
+          annually: {
+            price_id: "price_1NIDWvSDf9aCHdxcC5bby6cn",
+            total: 15,
+            ft: "\u20b9756",
+            price: 15,
+            fp: "$15",
+            subtitle: null,
+            title: null,
+            reccuring: "year",
+            discount: null,
+            coupon: null,
+            product_id: null,
+          },
+          name: "Teams",
+          title: "For businesses & teams",
+          cpc: 756,
+          description: "Mininimum 5 users",
+          features: [
+            "wCard.io Premium for all team members",
+            "Custom Profile & Dashboard Branding",
+            "NFC Products Management",
+            "Centralized Leads Storage",
+            "Teams and Sub-Teams",
+            "Advanced Team Analytics",
+            "Pre-defined templates",
+            "Export Data",
+            "Business-level support",
+          ],
+        },
+        free: {
+          title: "\u20b90",
+          name: "FREE",
+          description: "No Credit Card Required!",
+          features: [
+            "Digital Business Card for yourself",
+            "Basic customizations",
+            "wCard Branding",
+            "Include a profile image",
+            "Include a cover image",
+            "Add Education and Experience Tabs",
+            "Add Contact Form",
+            "5 Leads",
+            "Share your card with QR Code, mail, text, whatsapp, etc",
+            "Unlimited Social Links",
+            "Limited Mobile Numbers and Emails",
+            "Click to Action Button",
+            "Direct WhatsApp Button",
+            "Choose Theme Color from our palette",
+            "3 Uploads in Portfolio",
+            "Basic Analytics",
+          ],
+        },
+        currency_symbol: "\u20b9",
+        resellers: {
+          name: "Business",
+          title: "Let's Talk",
+          description: "Volume based costing.",
+          features: [
+            "Create Unlimited digital business cards for your team or customers.",
+            "Resell Digital business cards to your clients.",
+            "All cards on your company's domain.",
+            "Enterprise Admin Panel",
+            "Manage Cards from admin panel",
+            "Pay As Per You Use Based.",
+            "Create cards in bulk.",
+            "White Label Service.",
+            "Business-level support",
+          ],
+        },
+        total_ratings: "4.9",
+        total_reviews: 230,
+        razorpay: true,
+        discount: 500,
+        show_coupon: false,
+        offer_message:
+          "Hey Chaitanya Mule, we have a surprise offer for you \ud83d\ude0a, enjoy \u20b9500 OFF on annual subscription.",
+        time_left: "2024-03-01T16:33:08.000000Z",
+        products: {
+          basic: { id: 8, selling_price: "\u20b9699", total: "\u20b9699" },
+          infinite: { id: 9, selling_price: "\u20b9999", total: "\u20b9999" },
+          custom: {
+            id: 10,
+            selling_price: "\u20b91,499",
+            total: "\u20b91,499",
+          },
+          premium: {
+            id: 11,
+            price: "\u20b91,499",
+            selling_price: "\u20b9999",
+            actual_price: "\u20b9999",
+          },
+        },
+      };
+      var dashboard_settings = {
+        name: "wCard.io",
+        email: "contact@wcard.io",
+        mobile_number: "+919654440805",
+        whatsapp_number: "+919654440805",
+        company_name: "Wcard Technology Private Limited",
+        location: "New Delhi, India",
+        working_hours: "Mon-Fri 9AM to 8PM",
+        facebook_url: "https:\/\/facebook.com\/wcard.io",
+        instagram_url: "https:\/\/instagram.com\/wcard.io",
+        encrypt_message:
+          'wCard.io encrypts all data to ensure a completely secure experience for our members. Read our <a href="https:\/\/wcard.io\/privacy-policy" target="_action"\n                class="text-blue-500" >Privacy Policy<\/a>.',
+        // logo_url: "https:\/\/wcard.io\/images\/wcard.png",
+        show_rateus: true,
+        show_help: true,
+        show_chat: true,
+        show_subscription: true,
+        show_enterprise: true,
+        show_nfc_page: true,
+        show_contacts: true,
+        show_leads: true,
+        show_analytics: true,
+        show_referral: true,
+        buy_nfc: true,
+        can_edit_card: true,
+      };
+      var dashboard_sidebar = {
+        menu_items: [
+          { name: "My Profile", type: "heading" },
+          {
+            name: "Web Cards",
+            url: "\/dashboard\/cards",
+            icon: "CreditCardIcon",
+          },
+          { name: "NFC Card", url: "\/dashboard\/nfc-tags", icon: "NfcIcon" },
+          { name: "Contacts", url: "\/dashboard\/contacts", icon: "UsersIcon" },
+          { name: "My Leads", url: "\/dashboard\/leads", icon: "ChatAltIcon" },
+          {
+            name: "Virtual Background",
+            url: "\/dashboard\/background",
+            icon: "VideoCameraIcon",
+          },
+          {
+            name: "Email Signature",
+            url: "\/dashboard\/email-signature",
+            icon: "MailIcon",
+          },
+          {
+            name: "Analytics",
+            url: "\/dashboard\/analytics",
+            icon: "ChartPieIcon",
+          },
+        ],
+        show_upgrade_button: true,
+        user_info: {
+          name: "Chaitanya",
+          photo: "https:\/\/wcard.io\/images\/user.png",
+          menu_items: [
+            { label: "Account settings", link: "\/account\/settings" },
+            { label: "Support", link: "\/account\/help" },
+            { label: "Rate Us", link: "\/account\/rate-us" },
+          ],
+        },
+      };
+      var country = "IN";
+    </script>
+    <script
+      src="https://wcardcdn.b-cdn.net/dash/js/app.js?id=7de296766bb8f16676e07851b3e7822b"
+      defer
+    ></script>
+
+    <script>
+      var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+    </script>
+
+    <script type="text/javascript">
+      Tawk_API.visitor = {
+        name: auth.user.name,
+        email: auth.user.email,
+      };
+      Tawk_API.customStyle = {
+        visibility: {
+          mobile: {
+            xOffset: 20,
+            yOffset: 100,
+          },
+        },
+      };
+      (function () {
+        var s1 = document.createElement("script"),
+          s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = "https://embed.tawk.to/62a9f995b0d10b6f3e77855e/1g6spnh36";
+        s1.charset = "UTF-8";
+        s1.setAttribute("crossorigin", "*");
+        s0.parentNode.insertBefore(s1, s0);
+      })();
+    </script>
+    <!--End of Tawk.to Script-->
+    <script>
+      // Initialize the agent at application startup.
+      const fpPromise = import("https://openfpcdn.io/fingerprintjs/v3").then(
+        (FingerprintJS) => FingerprintJS.load()
+      );
+
+      // Get the visitor identifier when you need it.
+      fpPromise
+        .then((fp) => fp.get())
+        .then((result) => {
+          // This is the visitor identifier:
+          const visitorId = result.visitorId;
+          let postObj = {
+            f: visitorId,
+            u: window.location.href,
+            r: document.referrer,
+            _token: "z7j0GnKHsBlVeaaf7b4JRZyEcL3Db9pHtWcHFKT2",
+          };
+          let post = JSON.stringify(postObj);
+          const url = "/pixel";
+          let xhr = new XMLHttpRequest();
+          xhr.open("POST", url, true);
+          xhr.setRequestHeader(
+            "Content-type",
+            "application/json; charset=UTF-8"
+          );
+          xhr.send(post);
+          xhr.onload = function () {
+            if (xhr.status === 201) {
+            }
+          };
+        });
+    </script>
+
+    <script>
+      // @see https://docs.headwayapp.co/widget for more configuration options.
+      var HW_config = {
+        selector: ".whats_new", // CSS selector where to inject the badge
+        account: "x8b4zJ",
+      };
+    </script>
+    <script async src="https://cdn.headwayapp.co/widget.js"></script>
+  </body>
+</html>
